@@ -360,4 +360,11 @@ document.addEventListener("DOMContentLoaded",function(){
 .diva-bara-card .beer-label{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;background:#080706;margin:18px auto 20px;border-radius:3px}
 .diva-bara-card h3{margin:12px 0 8px}
 </style>
-</body></html>
+</body></html><style id="hermik-bubbles-over-main-logo">
+/* Animované bubliny smějí proletět PŘED velkým úvodním logem,
+   ale zůstávají za textem, tlačítky a obsahem stránky. */
+.bubbles{z-index:4!important}
+.hero .hero-logo{position:relative!important;z-index:1!important}
+.hero>:not(.hero-logo){position:relative!important;z-index:5!important}
+.section>*,.darkin>*,footer>*,.card,.beer-card{position:relative;z-index:5!important}
+</style>
